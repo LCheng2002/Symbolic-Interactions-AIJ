@@ -1,0 +1,20 @@
+{
+  "0": {
+    "figure_by_model": {
+      "deepseek-ai__DeepSeek-R1-Distill-Llama-8B": "A3",
+      "Qwen__Qwen2.5-7B": "A5"
+    },
+    "label": "Prompt 1",
+    "prompt": "New York Department of Health recommends that all people should wear N95, KN95, or KF94 masks in all public",
+    "continuation": "settings"
+  },
+  "1": {
+    "figure_by_model": {
+      "deepseek-ai__DeepSeek-R1-Distill-Llama-8B": "A4",
+      "Qwen__Qwen2.5-7B": "A6"
+    },
+    "label": "Prompt 2",
+    "prompt": "On June 11, 2018, OpenAI researchers and engineers published a paper introducing the first generative pre-trained",
+    "continuation": "transformer"
+  }
+}

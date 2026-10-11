@@ -1,0 +1,1806 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "task": "finance",
+  "device": "cuda:2",
+  "gpu": "NVIDIA A800 80GB PCIe",
+  "python": "3.10.20",
+  "torch": "2.5.1+cu124",
+  "transformers": "5.5.0",
+  "input_hashes": {
+    "prompts.json": "7113314720c276de9b619784a172038e8a5fbc1e4115c1e9396e441856ec92f1",
+    "prompts.txt": "21e8ac5cd3c495e200b63c66c6a4e4521b664a181e912dd7567fd5f635c896b8",
+    "players.json": "f4570598cd78fe461b4e31108aa9cc63fdd16f0d5f47adf55cb800cfaed50507"
+  },
+  "models": {
+    "deepseek-ai__DeepSeek-R1-Distill-Llama-8B": {
+      "baseline_token_id": 82638,
+      "model_revision": "6a6f4aa4197940add57724a7707d069478df56b1",
+      "model_dtype": "torch.bfloat16",
+      "tokenizer_compatibility": {
+        "compatibility_fix_applied": true,
+        "original_baseline_token_id": 97,
+        "reason": "transformers 5.5.0 AutoTokenizer dropped ByteLevel spaces; construct the fast tokenizer from the same snapshot tokenizer.json",
+        "tokenizer_json": "<HF_HOME>/hub/models--deepseek-ai--DeepSeek-R1-Distill-Llama-8B/snapshots/6a6f4aa4197940add57724a7707d069478df56b1/tokenizer.json",
+        "tokenizer_json_sha256": "b9c9eb63a8e03059914880f918cd28a880dec8b6e15e4461e1ff677e3743dbb8",
+        "corrected_baseline_token_id": 82638
+      },
+      "prompts": {
+        "0": {
+          "target_token_id": 5110,
+          "target_token": "Ġsettings",
+          "target_decoded": " settings",
+          "target_normalized": "settings",
+          "top1_probability": 0.5113556385040283,
+          "top20": [
+            {
+              "token_id": 5110,
+              "decoded": " settings",
+              "token": "Ġsettings",
+              "probability": 0.5113556385040283
+            },
+            {
+              "token_id": 12908,
+              "decoded": " spaces",
+              "token": "Ġspaces",
+              "probability": 0.18811723589897156
+            },
+            {
+              "token_id": 30619,
+              "decoded": " indoor",
+              "token": "Ġindoor",
+              "probability": 0.11409886926412582
+            },
+            {
+              "token_id": 7634,
+              "decoded": " places",
+              "token": "Ġplaces",
+              "probability": 0.07841892540454865
+            },
+            {
+              "token_id": 18386,
+              "decoded": " transportation",
+              "token": "Ġtransportation",
+              "probability": 0.03268986940383911
+            },
+            {
+              "token_id": 323,
+              "decoded": " and",
+              "token": "Ġand",
+              "probability": 0.03268986940383911
+            },
+            {
+              "token_id": 7710,
+              "decoded": " transport",
+              "token": "Ġtransport",
+              "probability": 0.01362716592848301
+            },
+            {
+              "token_id": 25032,
+              "decoded": " transit",
+              "token": "Ġtransit",
+              "probability": 0.007764524780213833
+            },
+            {
+              "token_id": 5789,
+              "decoded": " areas",
+              "token": "Ġareas",
+              "probability": 0.006852169521152973
+            },
+            {
+              "token_id": 11,
+              "decoded": ",",
+              "token": ",",
+              "probability": 0.006047017872333527
+            },
+            {
+              "token_id": 10687,
+              "decoded": " locations",
+              "token": "Ġlocations",
+              "probability": 0.0015289257280528545
+            },
+            {
+              "token_id": 477,
+              "decoded": " or",
+              "token": "Ġor",
+              "probability": 0.0008711556438356638
+            },
+            {
+              "token_id": 11548,
+              "decoded": " Settings",
+              "token": "ĠSettings",
+              "probability": 0.0005624602781608701
+            },
+            {
+              "token_id": 9522,
+              "decoded": "...\n",
+              "token": "...Ċ",
+              "probability": 0.00043804451706819236
+            },
+            {
+              "token_id": 6214,
+              "decoded": "Settings",
+              "token": "Settings",
+              "probability": 0.00038657293771393597
+            },
+            {
+              "token_id": 6648,
+              "decoded": "settings",
+              "token": "settings",
+              "probability": 0.00038657293771393597
+            },
+            {
+              "token_id": 198,
+              "decoded": "\n",
+              "token": "Ċ",
+              "probability": 0.0003411494253668934
+            },
+            {
+              "token_id": 64368,
+              "decoded": " Indoor",
+              "token": "ĠIndoor",
+              "probability": 0.0002828227879945189
+            },
+            {
+              "token_id": 22484,
+              "decoded": " environments",
+              "token": "Ġenvironments",
+              "probability": 0.00018260411161463708
+            },
+            {
+              "token_id": 2890,
+              "decoded": " health",
+              "token": "Ġhealth",
+              "probability": 0.0001611475890967995
+            }
+          ],
+          "continuation_ids_with_leading_space": [
+            5110
+          ],
+          "continuation_tokens_with_leading_space": [
+            "Ġsettings"
+          ],
+          "continuation_ids_without_leading_space": [
+            6648
+          ],
+          "continuation_tokens_without_leading_space": [
+            "settings"
+          ],
+          "input_ids": [
+            3648,
+            4356,
+            6011,
+            315,
+            6401,
+            40912,
+            430,
+            682,
+            1274,
+            1288,
+            10051,
+            452,
+            2721,
+            11,
+            32392,
+            2721,
+            11,
+            477,
+            735,
+            37,
+            6281,
+            27227,
+            304,
+            682,
+            586
+          ],
+          "input_tokens": [
+            "New",
+            "ĠYork",
+            "ĠDepartment",
+            "Ġof",
+            "ĠHealth",
+            "Ġrecommends",
+            "Ġthat",
+            "Ġall",
+            "Ġpeople",
+            "Ġshould",
+            "Ġwear",
+            "ĠN",
+            "95",
+            ",",
+            "ĠKN",
+            "95",
+            ",",
+            "Ġor",
+            "ĠK",
+            "F",
+            "94",
+            "Ġmasks",
+            "Ġin",
+            "Ġall",
+            "Ġpublic"
+          ],
+          "players": [
+            {
+              "text": "New York",
+              "character_range": [
+                0,
+                8
+              ],
+              "token_indices": [
+                0,
+                1
+              ],
+              "token_ids": [
+                3648,
+                4356
+              ],
+              "tokens": [
+                "New",
+                "ĠYork"
+              ],
+              "decoded": "New York",
+              "mapping_ok": true
+            },
+            {
+              "text": "Department",
+              "character_range": [
+                9,
+                19
+              ],
+              "token_indices": [
+                2
+              ],
+              "token_ids": [
+                6011
+              ],
+              "tokens": [
+                "ĠDepartment"
+              ],
+              "decoded": " Department",
+              "mapping_ok": true
+            },
+            {
+              "text": "Health",
+              "character_range": [
+                23,
+                29
+              ],
+              "token_indices": [
+                4
+              ],
+              "token_ids": [
+                6401
+              ],
+              "tokens": [
+                "ĠHealth"
+              ],
+              "decoded": " Health",
+              "mapping_ok": true
+            },
+            {
+              "text": "recommends",
+              "character_range": [
+                30,
+                40
+              ],
+              "token_indices": [
+                5
+              ],
+              "token_ids": [
+                40912
+              ],
+              "tokens": [
+                "Ġrecommends"
+              ],
+              "decoded": " recommends",
+              "mapping_ok": true
+            },
+            {
+              "text": "all people",
+              "character_range": [
+                46,
+                56
+              ],
+              "token_indices": [
+                7,
+                8
+              ],
+              "token_ids": [
+                682,
+                1274
+              ],
+              "tokens": [
+                "Ġall",
+                "Ġpeople"
+              ],
+              "decoded": " all people",
+              "mapping_ok": true
+            },
+            {
+              "text": "wear",
+              "character_range": [
+                64,
+                68
+              ],
+              "token_indices": [
+                10
+              ],
+              "token_ids": [
+                10051
+              ],
+              "tokens": [
+                "Ġwear"
+              ],
+              "decoded": " wear",
+              "mapping_ok": true
+            },
+            {
+              "text": "N95",
+              "character_range": [
+                69,
+                72
+              ],
+              "token_indices": [
+                11,
+                12
+              ],
+              "token_ids": [
+                452,
+                2721
+              ],
+              "tokens": [
+                "ĠN",
+                "95"
+              ],
+              "decoded": " N95",
+              "mapping_ok": true
+            },
+            {
+              "text": "KN95",
+              "character_range": [
+                74,
+                78
+              ],
+              "token_indices": [
+                14,
+                15
+              ],
+              "token_ids": [
+                32392,
+                2721
+              ],
+              "tokens": [
+                "ĠKN",
+                "95"
+              ],
+              "decoded": " KN95",
+              "mapping_ok": true
+            },
+            {
+              "text": "KF94 masks",
+              "character_range": [
+                83,
+                93
+              ],
+              "token_indices": [
+                18,
+                19,
+                20,
+                21
+              ],
+              "token_ids": [
+                735,
+                37,
+                6281,
+                27227
+              ],
+              "tokens": [
+                "ĠK",
+                "F",
+                "94",
+                "Ġmasks"
+              ],
+              "decoded": " KF94 masks",
+              "mapping_ok": true
+            },
+            {
+              "text": "public",
+              "character_range": [
+                101,
+                107
+              ],
+              "token_indices": [
+                24
+              ],
+              "token_ids": [
+                586
+              ],
+              "tokens": [
+                "Ġpublic"
+              ],
+              "decoded": " public",
+              "mapping_ok": true
+            }
+          ],
+          "fixed_context": {
+            "token_indices": [
+              3,
+              6,
+              9,
+              13,
+              16,
+              17,
+              22,
+              23
+            ],
+            "token_ids": [
+              315,
+              430,
+              1288,
+              11,
+              11,
+              477,
+              304,
+              682
+            ],
+            "tokens": [
+              "Ġof",
+              "Ġthat",
+              "Ġshould",
+              ",",
+              ",",
+              "Ġor",
+              "Ġin",
+              "Ġall"
+            ],
+            "decoded": " of that should,, or in all",
+            "preserved_under_all_masks": true
+          },
+          "generated_mask_shape": [
+            1024,
+            10
+          ]
+        },
+        "1": {
+          "target_token_id": 43678,
+          "target_token": "Ġtransformer",
+          "target_decoded": " transformer",
+          "target_normalized": "transformer",
+          "top1_probability": 0.5173463225364685,
+          "top20": [
+            {
+              "token_id": 43678,
+              "decoded": " transformer",
+              "token": "Ġtransformer",
+              "probability": 0.5173463225364685
+            },
+            {
+              "token_id": 4221,
+              "decoded": " language",
+              "token": "Ġlanguage",
+              "probability": 0.20259574055671692
+            },
+            {
+              "token_id": 1646,
+              "decoded": " model",
+              "token": "Ġmodel",
+              "probability": 0.16795776784420013
+            },
+            {
+              "token_id": 15592,
+              "decoded": " AI",
+              "token": "ĠAI",
+              "probability": 0.027418352663517
+            },
+            {
+              "token_id": 4211,
+              "decoded": " models",
+              "token": "Ġmodels",
+              "probability": 0.022730613127350807
+            },
+            {
+              "token_id": 87970,
+              "decoded": " transformers",
+              "token": "Ġtransformers",
+              "probability": 0.0146759869530797
+            },
+            {
+              "token_id": 63479,
+              "decoded": " Transformer",
+              "token": "ĠTransformer",
+              "probability": 0.010737180709838867
+            },
+            {
+              "token_id": 7447,
+              "decoded": " multi",
+              "token": "Ġmulti",
+              "probability": 0.007855488918721676
+            },
+            {
+              "token_id": 30828,
+              "decoded": " neural",
+              "token": "Ġneural",
+              "probability": 0.0027147845830768347
+            },
+            {
+              "token_id": 320,
+              "decoded": " (",
+              "token": "Ġ(",
+              "probability": 0.0027147845830768347
+            },
+            {
+              "token_id": 5780,
+              "decoded": " machine",
+              "token": "Ġmachine",
+              "probability": 0.0021142764016985893
+            },
+            {
+              "token_id": 2814,
+              "decoded": " mult",
+              "token": "Ġmult",
+              "probability": 0.0016466000815853477
+            },
+            {
+              "token_id": 3544,
+              "decoded": " large",
+              "token": "Ġlarge",
+              "probability": 0.00099871342536062
+            },
+            {
+              "token_id": 4009,
+              "decoded": " network",
+              "token": "Ġnetwork",
+              "probability": 0.0008813615422695875
+            },
+            {
+              "token_id": 16796,
+              "decoded": " ai",
+              "token": "Ġai",
+              "probability": 0.0005345727549865842
+            },
+            {
+              "token_id": 80149,
+              "decoded": " multim",
+              "token": "Ġmultim",
+              "probability": 0.000502184615470469
+            },
+            {
+              "token_id": 11789,
+              "decoded": "language",
+              "token": "language",
+              "probability": 0.0003674061154015362
+            },
+            {
+              "token_id": 3154,
+              "decoded": " aut",
+              "token": "Ġaut",
+              "probability": 0.00034514610888436437
+            },
+            {
+              "token_id": 9522,
+              "decoded": "...\n",
+              "token": "...Ċ",
+              "probability": 0.00034514610888436437
+            },
+            {
+              "token_id": 28814,
+              "decoded": " composite",
+              "token": "Ġcomposite",
+              "probability": 0.00028613617178052664
+            }
+          ],
+          "continuation_ids_with_leading_space": [
+            43678
+          ],
+          "continuation_tokens_with_leading_space": [
+            "Ġtransformer"
+          ],
+          "continuation_ids_without_leading_space": [
+            4806,
+            261
+          ],
+          "continuation_tokens_without_leading_space": [
+            "transform",
+            "er"
+          ],
+          "input_ids": [
+            1966,
+            5651,
+            220,
+            806,
+            11,
+            220,
+            679,
+            23,
+            11,
+            5377,
+            15836,
+            12074,
+            323,
+            25175,
+            4756,
+            264,
+            5684,
+            33018,
+            279,
+            1176,
+            1803,
+            1413,
+            864,
+            70024
+          ],
+          "input_tokens": [
+            "On",
+            "ĠJune",
+            "Ġ",
+            "11",
+            ",",
+            "Ġ",
+            "201",
+            "8",
+            ",",
+            "ĠOpen",
+            "AI",
+            "Ġresearchers",
+            "Ġand",
+            "Ġengineers",
+            "Ġpublished",
+            "Ġa",
+            "Ġpaper",
+            "Ġintroducing",
+            "Ġthe",
+            "Ġfirst",
+            "Ġgener",
+            "ative",
+            "Ġpre",
+            "-trained"
+          ],
+          "players": [
+            {
+              "text": "On",
+              "character_range": [
+                0,
+                2
+              ],
+              "token_indices": [
+                0
+              ],
+              "token_ids": [
+                1966
+              ],
+              "tokens": [
+                "On"
+              ],
+              "decoded": "On",
+              "mapping_ok": true
+            },
+            {
+              "text": "June 11, 2018,",
+              "character_range": [
+                3,
+                17
+              ],
+              "token_indices": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "token_ids": [
+                5651,
+                220,
+                806,
+                11,
+                220,
+                679,
+                23,
+                11
+              ],
+              "tokens": [
+                "ĠJune",
+                "Ġ",
+                "11",
+                ",",
+                "Ġ",
+                "201",
+                "8",
+                ","
+              ],
+              "decoded": " June 11, 2018,",
+              "mapping_ok": true
+            },
+            {
+              "text": "OpenAI",
+              "character_range": [
+                18,
+                24
+              ],
+              "token_indices": [
+                9,
+                10
+              ],
+              "token_ids": [
+                5377,
+                15836
+              ],
+              "tokens": [
+                "ĠOpen",
+                "AI"
+              ],
+              "decoded": " OpenAI",
+              "mapping_ok": true
+            },
+            {
+              "text": "researchers",
+              "character_range": [
+                25,
+                36
+              ],
+              "token_indices": [
+                11
+              ],
+              "token_ids": [
+                12074
+              ],
+              "tokens": [
+                "Ġresearchers"
+              ],
+              "decoded": " researchers",
+              "mapping_ok": true
+            },
+            {
+              "text": "and",
+              "character_range": [
+                37,
+                40
+              ],
+              "token_indices": [
+                12
+              ],
+              "token_ids": [
+                323
+              ],
+              "tokens": [
+                "Ġand"
+              ],
+              "decoded": " and",
+              "mapping_ok": true
+            },
+            {
+              "text": "engineers",
+              "character_range": [
+                41,
+                50
+              ],
+              "token_indices": [
+                13
+              ],
+              "token_ids": [
+                25175
+              ],
+              "tokens": [
+                "Ġengineers"
+              ],
+              "decoded": " engineers",
+              "mapping_ok": true
+            },
+            {
+              "text": "published",
+              "character_range": [
+                51,
+                60
+              ],
+              "token_indices": [
+                14
+              ],
+              "token_ids": [
+                4756
+              ],
+              "tokens": [
+                "Ġpublished"
+              ],
+              "decoded": " published",
+              "mapping_ok": true
+            },
+            {
+              "text": "a paper",
+              "character_range": [
+                61,
+                68
+              ],
+              "token_indices": [
+                15,
+                16
+              ],
+              "token_ids": [
+                264,
+                5684
+              ],
+              "tokens": [
+                "Ġa",
+                "Ġpaper"
+              ],
+              "decoded": " a paper",
+              "mapping_ok": true
+            },
+            {
+              "text": "introducing",
+              "character_range": [
+                69,
+                80
+              ],
+              "token_indices": [
+                17
+              ],
+              "token_ids": [
+                33018
+              ],
+              "tokens": [
+                "Ġintroducing"
+              ],
+              "decoded": " introducing",
+              "mapping_ok": true
+            },
+            {
+              "text": "the first generative pre-trained",
+              "character_range": [
+                81,
+                113
+              ],
+              "token_indices": [
+                18,
+                19,
+                20,
+                21,
+                22,
+                23
+              ],
+              "token_ids": [
+                279,
+                1176,
+                1803,
+                1413,
+                864,
+                70024
+              ],
+              "tokens": [
+                "Ġthe",
+                "Ġfirst",
+                "Ġgener",
+                "ative",
+                "Ġpre",
+                "-trained"
+              ],
+              "decoded": " the first generative pre-trained",
+              "mapping_ok": true
+            }
+          ],
+          "fixed_context": {
+            "token_indices": [],
+            "token_ids": [],
+            "tokens": [],
+            "decoded": "",
+            "preserved_under_all_masks": true
+          },
+          "generated_mask_shape": [
+            1024,
+            10
+          ]
+        }
+      }
+    },
+    "Qwen__Qwen2.5-7B": {
+      "baseline_token_id": 97,
+      "model_revision": "d149729398750b98c0af14eb82c78cfe92750796",
+      "model_dtype": "torch.bfloat16",
+      "tokenizer_compatibility": {
+        "compatibility_fix_applied": false,
+        "original_baseline_token_id": 97,
+        "corrected_baseline_token_id": 97
+      },
+      "prompts": {
+        "0": {
+          "target_token_id": 5003,
+          "target_token": "Ġsettings",
+          "target_decoded": " settings",
+          "target_normalized": "settings",
+          "top1_probability": 0.36852437257766724,
+          "top20": [
+            {
+              "token_id": 5003,
+              "decoded": " settings",
+              "token": "Ġsettings",
+              "probability": 0.36852437257766724
+            },
+            {
+              "token_id": 29519,
+              "decoded": " indoor",
+              "token": "Ġindoor",
+              "probability": 0.28700706362724304
+            },
+            {
+              "token_id": 7482,
+              "decoded": " places",
+              "token": "Ġplaces",
+              "probability": 0.1536238044500351
+            },
+            {
+              "token_id": 12621,
+              "decoded": " spaces",
+              "token": "Ġspaces",
+              "probability": 0.10558400303125381
+            },
+            {
+              "token_id": 323,
+              "decoded": " and",
+              "token": "Ġand",
+              "probability": 0.020790722221136093
+            },
+            {
+              "token_id": 5671,
+              "decoded": " areas",
+              "token": "Ġareas",
+              "probability": 0.019531074911355972
+            },
+            {
+              "token_id": 17903,
+              "decoded": " transportation",
+              "token": "Ġtransportation",
+              "probability": 0.007648478727787733
+            },
+            {
+              "token_id": 11,
+              "decoded": ",",
+              "token": ",",
+              "probability": 0.004639036953449249
+            },
+            {
+              "token_id": 10468,
+              "decoded": " locations",
+              "token": "Ġlocations",
+              "probability": 0.0036128859501332045
+            },
+            {
+              "token_id": 476,
+              "decoded": " or",
+              "token": "Ġor",
+              "probability": 0.0028137180488556623
+            },
+            {
+              "token_id": 13702,
+              "decoded": " buildings",
+              "token": "Ġbuildings",
+              "probability": 0.002643243409693241
+            },
+            {
+              "token_id": 15789,
+              "decoded": " outdoor",
+              "token": "Ġoutdoor",
+              "probability": 0.002483097603544593
+            },
+            {
+              "token_id": 24065,
+              "decoded": " transit",
+              "token": "Ġtransit",
+              "probability": 0.002191325882449746
+            },
+            {
+              "token_id": 14740,
+              "decoded": " situations",
+              "token": "Ġsituations",
+              "probability": 0.0013291063951328397
+            },
+            {
+              "token_id": 63306,
+              "decoded": "-facing",
+              "token": "-facing",
+              "probability": 0.0012485799379646778
+            },
+            {
+              "token_id": 6243,
+              "decoded": " setting",
+              "token": "Ġsetting",
+              "probability": 0.0010351091623306274
+            },
+            {
+              "token_id": 2820,
+              "decoded": " health",
+              "token": "Ġhealth",
+              "probability": 0.0010351091623306274
+            },
+            {
+              "token_id": 7557,
+              "decoded": " transport",
+              "token": "Ġtransport",
+              "probability": 0.0007573019829578698
+            },
+            {
+              "token_id": 21737,
+              "decoded": " environments",
+              "token": "Ġenvironments",
+              "probability": 0.0007573019829578698
+            },
+            {
+              "token_id": 36178,
+              "decoded": " venues",
+              "token": "Ġvenues",
+              "probability": 0.0005204855697229505
+            }
+          ],
+          "continuation_ids_with_leading_space": [
+            5003
+          ],
+          "continuation_tokens_with_leading_space": [
+            "Ġsettings"
+          ],
+          "continuation_ids_without_leading_space": [
+            6511
+          ],
+          "continuation_tokens_without_leading_space": [
+            "settings"
+          ],
+          "input_ids": [
+            3564,
+            4261,
+            5887,
+            315,
+            6267,
+            39812,
+            429,
+            678,
+            1251,
+            1265,
+            9850,
+            451,
+            24,
+            20,
+            11,
+            31292,
+            24,
+            20,
+            11,
+            476,
+            730,
+            37,
+            24,
+            19,
+            26135,
+            304,
+            678,
+            584
+          ],
+          "input_tokens": [
+            "New",
+            "ĠYork",
+            "ĠDepartment",
+            "Ġof",
+            "ĠHealth",
+            "Ġrecommends",
+            "Ġthat",
+            "Ġall",
+            "Ġpeople",
+            "Ġshould",
+            "Ġwear",
+            "ĠN",
+            "9",
+            "5",
+            ",",
+            "ĠKN",
+            "9",
+            "5",
+            ",",
+            "Ġor",
+            "ĠK",
+            "F",
+            "9",
+            "4",
+            "Ġmasks",
+            "Ġin",
+            "Ġall",
+            "Ġpublic"
+          ],
+          "players": [
+            {
+              "text": "New York",
+              "character_range": [
+                0,
+                8
+              ],
+              "token_indices": [
+                0,
+                1
+              ],
+              "token_ids": [
+                3564,
+                4261
+              ],
+              "tokens": [
+                "New",
+                "ĠYork"
+              ],
+              "decoded": "New York",
+              "mapping_ok": true
+            },
+            {
+              "text": "Department",
+              "character_range": [
+                9,
+                19
+              ],
+              "token_indices": [
+                2
+              ],
+              "token_ids": [
+                5887
+              ],
+              "tokens": [
+                "ĠDepartment"
+              ],
+              "decoded": " Department",
+              "mapping_ok": true
+            },
+            {
+              "text": "Health",
+              "character_range": [
+                23,
+                29
+              ],
+              "token_indices": [
+                4
+              ],
+              "token_ids": [
+                6267
+              ],
+              "tokens": [
+                "ĠHealth"
+              ],
+              "decoded": " Health",
+              "mapping_ok": true
+            },
+            {
+              "text": "recommends",
+              "character_range": [
+                30,
+                40
+              ],
+              "token_indices": [
+                5
+              ],
+              "token_ids": [
+                39812
+              ],
+              "tokens": [
+                "Ġrecommends"
+              ],
+              "decoded": " recommends",
+              "mapping_ok": true
+            },
+            {
+              "text": "all people",
+              "character_range": [
+                46,
+                56
+              ],
+              "token_indices": [
+                7,
+                8
+              ],
+              "token_ids": [
+                678,
+                1251
+              ],
+              "tokens": [
+                "Ġall",
+                "Ġpeople"
+              ],
+              "decoded": " all people",
+              "mapping_ok": true
+            },
+            {
+              "text": "wear",
+              "character_range": [
+                64,
+                68
+              ],
+              "token_indices": [
+                10
+              ],
+              "token_ids": [
+                9850
+              ],
+              "tokens": [
+                "Ġwear"
+              ],
+              "decoded": " wear",
+              "mapping_ok": true
+            },
+            {
+              "text": "N95",
+              "character_range": [
+                69,
+                72
+              ],
+              "token_indices": [
+                11,
+                12,
+                13
+              ],
+              "token_ids": [
+                451,
+                24,
+                20
+              ],
+              "tokens": [
+                "ĠN",
+                "9",
+                "5"
+              ],
+              "decoded": " N95",
+              "mapping_ok": true
+            },
+            {
+              "text": "KN95",
+              "character_range": [
+                74,
+                78
+              ],
+              "token_indices": [
+                15,
+                16,
+                17
+              ],
+              "token_ids": [
+                31292,
+                24,
+                20
+              ],
+              "tokens": [
+                "ĠKN",
+                "9",
+                "5"
+              ],
+              "decoded": " KN95",
+              "mapping_ok": true
+            },
+            {
+              "text": "KF94 masks",
+              "character_range": [
+                83,
+                93
+              ],
+              "token_indices": [
+                20,
+                21,
+                22,
+                23,
+                24
+              ],
+              "token_ids": [
+                730,
+                37,
+                24,
+                19,
+                26135
+              ],
+              "tokens": [
+                "ĠK",
+                "F",
+                "9",
+                "4",
+                "Ġmasks"
+              ],
+              "decoded": " KF94 masks",
+              "mapping_ok": true
+            },
+            {
+              "text": "public",
+              "character_range": [
+                101,
+                107
+              ],
+              "token_indices": [
+                27
+              ],
+              "token_ids": [
+                584
+              ],
+              "tokens": [
+                "Ġpublic"
+              ],
+              "decoded": " public",
+              "mapping_ok": true
+            }
+          ],
+          "fixed_context": {
+            "token_indices": [
+              3,
+              6,
+              9,
+              14,
+              18,
+              19,
+              25,
+              26
+            ],
+            "token_ids": [
+              315,
+              429,
+              1265,
+              11,
+              11,
+              476,
+              304,
+              678
+            ],
+            "tokens": [
+              "Ġof",
+              "Ġthat",
+              "Ġshould",
+              ",",
+              ",",
+              "Ġor",
+              "Ġin",
+              "Ġall"
+            ],
+            "decoded": " of that should,, or in all",
+            "preserved_under_all_masks": true
+          },
+          "generated_mask_shape": [
+            1024,
+            10
+          ]
+        },
+        "1": {
+          "target_token_id": 42578,
+          "target_token": "Ġtransformer",
+          "target_decoded": " transformer",
+          "target_normalized": "transformer",
+          "top1_probability": 0.8239799737930298,
+          "top20": [
+            {
+              "token_id": 42578,
+              "decoded": " transformer",
+              "token": "Ġtransformer",
+              "probability": 0.8239799737930298
+            },
+            {
+              "token_id": 62379,
+              "decoded": " Transformer",
+              "token": "ĠTransformer",
+              "probability": 0.07664207369089127
+            },
+            {
+              "token_id": 4128,
+              "decoded": " language",
+              "token": "Ġlanguage",
+              "probability": 0.02819504402577877
+            },
+            {
+              "token_id": 1614,
+              "decoded": " model",
+              "token": "Ġmodel",
+              "probability": 0.013318395242094994
+            },
+            {
+              "token_id": 86870,
+              "decoded": " transformers",
+              "token": "Ġtransformers",
+              "probability": 0.010372377000749111
+            },
+            {
+              "token_id": 11,
+              "decoded": ",",
+              "token": ",",
+              "probability": 0.010372377000749111
+            },
+            {
+              "token_id": 29728,
+              "decoded": " neural",
+              "token": "Ġneural",
+              "probability": 0.007588592823594809
+            },
+            {
+              "token_id": 479,
+              "decoded": " G",
+              "token": "ĠG",
+              "probability": 0.0019186967983841896
+            },
+            {
+              "token_id": 2745,
+              "decoded": " mult",
+              "token": "Ġmult",
+              "probability": 0.001802448881790042
+            },
+            {
+              "token_id": 320,
+              "decoded": " (",
+              "token": "Ġ(",
+              "probability": 0.001802448881790042
+            },
+            {
+              "token_id": 1467,
+              "decoded": " text",
+              "token": "Ġtext",
+              "probability": 0.001693243975751102
+            },
+            {
+              "token_id": 23668,
+              "decoded": " encoder",
+              "token": "Ġencoder",
+              "probability": 0.0010932404547929764
+            },
+            {
+              "token_id": 5538,
+              "decoded": " deep",
+              "token": "Ġdeep",
+              "probability": 0.001027004444040358
+            },
+            {
+              "token_id": 80532,
+              "decoded": " Transformers",
+              "token": "ĠTransformers",
+              "probability": 0.001027004444040358
+            },
+            {
+              "token_id": 17991,
+              "decoded": " transformation",
+              "token": "Ġtransformation",
+              "probability": 0.0009063282050192356
+            },
+            {
+              "token_id": 94430,
+              "decoded": " Turing",
+              "token": "ĠTuring",
+              "probability": 0.0007513724849559367
+            },
+            {
+              "token_id": 64074,
+              "decoded": " recurrent",
+              "token": "Ġrecurrent",
+              "probability": 0.0007058490882627666
+            },
+            {
+              "token_id": 14103,
+              "decoded": " bid",
+              "token": "Ġbid",
+              "probability": 0.0007058490882627666
+            },
+            {
+              "token_id": 8317,
+              "decoded": " transfer",
+              "token": "Ġtransfer",
+              "probability": 0.0006630838615819812
+            },
+            {
+              "token_id": 6975,
+              "decoded": " uns",
+              "token": "Ġuns",
+              "probability": 0.0006630838615819812
+            }
+          ],
+          "continuation_ids_with_leading_space": [
+            42578
+          ],
+          "continuation_tokens_with_leading_space": [
+            "Ġtransformer"
+          ],
+          "continuation_ids_without_leading_space": [
+            4701,
+            261
+          ],
+          "continuation_tokens_without_leading_space": [
+            "transform",
+            "er"
+          ],
+          "input_ids": [
+            1925,
+            5534,
+            220,
+            16,
+            16,
+            11,
+            220,
+            17,
+            15,
+            16,
+            23,
+            11,
+            5264,
+            15469,
+            11811,
+            323,
+            24198,
+            4652,
+            264,
+            5567,
+            31918,
+            279,
+            1156,
+            1766,
+            1388,
+            855,
+            68924
+          ],
+          "input_tokens": [
+            "On",
+            "ĠJune",
+            "Ġ",
+            "1",
+            "1",
+            ",",
+            "Ġ",
+            "2",
+            "0",
+            "1",
+            "8",
+            ",",
+            "ĠOpen",
+            "AI",
+            "Ġresearchers",
+            "Ġand",
+            "Ġengineers",
+            "Ġpublished",
+            "Ġa",
+            "Ġpaper",
+            "Ġintroducing",
+            "Ġthe",
+            "Ġfirst",
+            "Ġgener",
+            "ative",
+            "Ġpre",
+            "-trained"
+          ],
+          "players": [
+            {
+              "text": "On",
+              "character_range": [
+                0,
+                2
+              ],
+              "token_indices": [
+                0
+              ],
+              "token_ids": [
+                1925
+              ],
+              "tokens": [
+                "On"
+              ],
+              "decoded": "On",
+              "mapping_ok": true
+            },
+            {
+              "text": "June 11, 2018,",
+              "character_range": [
+                3,
+                17
+              ],
+              "token_indices": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "token_ids": [
+                5534,
+                220,
+                16,
+                16,
+                11,
+                220,
+                17,
+                15,
+                16,
+                23,
+                11
+              ],
+              "tokens": [
+                "ĠJune",
+                "Ġ",
+                "1",
+                "1",
+                ",",
+                "Ġ",
+                "2",
+                "0",
+                "1",
+                "8",
+                ","
+              ],
+              "decoded": " June 11, 2018,",
+              "mapping_ok": true
+            },
+            {
+              "text": "OpenAI",
+              "character_range": [
+                18,
+                24
+              ],
+              "token_indices": [
+                12,
+                13
+              ],
+              "token_ids": [
+                5264,
+                15469
+              ],
+              "tokens": [
+                "ĠOpen",
+                "AI"
+              ],
+              "decoded": " OpenAI",
+              "mapping_ok": true
+            },
+            {
+              "text": "researchers",
+              "character_range": [
+                25,
+                36
+              ],
+              "token_indices": [
+                14
+              ],
+              "token_ids": [
+                11811
+              ],
+              "tokens": [
+                "Ġresearchers"
+              ],
+              "decoded": " researchers",
+              "mapping_ok": true
+            },
+            {
+              "text": "and",
+              "character_range": [
+                37,
+                40
+              ],
+              "token_indices": [
+                15
+              ],
+              "token_ids": [
+                323
+              ],
+              "tokens": [
+                "Ġand"
+              ],
+              "decoded": " and",
+              "mapping_ok": true
+            },
+            {
+              "text": "engineers",
+              "character_range": [
+                41,
+                50
+              ],
+              "token_indices": [
+                16
+              ],
+              "token_ids": [
+                24198
+              ],
+              "tokens": [
+                "Ġengineers"
+              ],
+              "decoded": " engineers",
+              "mapping_ok": true
+            },
+            {
+              "text": "published",
+              "character_range": [
+                51,
+                60
+              ],
+              "token_indices": [
+                17
+              ],
+              "token_ids": [
+                4652
+              ],
+              "tokens": [
+                "Ġpublished"
+              ],
+              "decoded": " published",
+              "mapping_ok": true
+            },
+            {
+              "text": "a paper",
+              "character_range": [
+                61,
+                68
+              ],
+              "token_indices": [
+                18,
+                19
+              ],
+              "token_ids": [
+                264,
+                5567
+              ],
+              "tokens": [
+                "Ġa",
+                "Ġpaper"
+              ],
+              "decoded": " a paper",
+              "mapping_ok": true
+            },
+            {
+              "text": "introducing",
+              "character_range": [
+                69,
+                80
+              ],
+              "token_indices": [
+                20
+              ],
+              "token_ids": [
+                31918
+              ],
+              "tokens": [
+                "Ġintroducing"
+              ],
+              "decoded": " introducing",
+              "mapping_ok": true
+            },
+            {
+              "text": "the first generative pre-trained",
+              "character_range": [
+                81,
+                113
+              ],
+              "token_indices": [
+                21,
+                22,
+                23,
+                24,
+                25,
+                26
+              ],
+              "token_ids": [
+                279,
+                1156,
+                1766,
+                1388,
+                855,
+                68924
+              ],
+              "tokens": [
+                "Ġthe",
+                "Ġfirst",
+                "Ġgener",
+                "ative",
+                "Ġpre",
+                "-trained"
+              ],
+              "decoded": " the first generative pre-trained",
+              "mapping_ok": true
+            }
+          ],
+          "fixed_context": {
+            "token_indices": [],
+            "token_ids": [],
+            "tokens": [],
+            "decoded": "",
+            "preserved_under_all_masks": true
+          },
+          "generated_mask_shape": [
+            1024,
+            10
+          ]
+        }
+      }
+    }
+  }
+}

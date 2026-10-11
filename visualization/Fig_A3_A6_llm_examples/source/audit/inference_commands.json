@@ -1,0 +1,60 @@
+[
+  {
+    "model": "deepseek-ai__DeepSeek-R1-Distill-Llama-8B",
+    "batch_size": 16,
+    "command": [
+      "generate_llm_single_inference_cache.py",
+      "--models",
+      "deepseek-ai__DeepSeek-R1-Distill-Llama-8B",
+      "--task",
+      "finance",
+      "--anchor-json",
+      "<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/data/anchors.json",
+      "--dst-root",
+      "<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/interaction_inference_cache",
+      "--sentence-path",
+      "<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/data/prompts.txt",
+      "--player-path",
+      "<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/data/players.json",
+      "--gpu-id",
+      "2",
+      "--num-samples",
+      "2",
+      "--samples",
+      "0",
+      "1",
+      "--batch-size",
+      "16",
+      "--overwrite"
+    ]
+  },
+  {
+    "model": "Qwen__Qwen2.5-7B",
+    "batch_size": 256,
+    "command": [
+      "generate_llm_single_inference_cache.py",
+      "--models",
+      "Qwen__Qwen2.5-7B",
+      "--task",
+      "finance",
+      "--anchor-json",
+      "<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/data/anchors.json",
+      "--dst-root",
+      "<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/interaction_inference_cache",
+      "--sentence-path",
+      "<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/data/prompts.txt",
+      "--player-path",
+      "<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/data/players.json",
+      "--gpu-id",
+      "2",
+      "--num-samples",
+      "2",
+      "--samples",
+      "0",
+      "1",
+      "--batch-size",
+      "256",
+      "--overwrite"
+    ]
+  }
+]

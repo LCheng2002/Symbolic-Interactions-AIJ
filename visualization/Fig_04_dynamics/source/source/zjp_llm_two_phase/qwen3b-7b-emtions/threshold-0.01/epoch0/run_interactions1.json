@@ -1,0 +1,41 @@
+{
+    "device": "cuda:0",
+    "baseline_path": "/path/to/two-phase-average/baseline-results-qwen7b-emotions",
+    "batch_size": 256,
+    "sample_path": "/path/to/two-phase-average/data-gt/qwen/emotion_test_interactions.json",
+    "save_dir": "/path/to/two-phase-average/results/interactions/qwen3b-7b-emtions",
+    "with_indent": 1,
+    "lr": 1e-07,
+    "smoothness": 0.999,
+    "sparsify_loss": "option1",
+    "epochs": 20000,
+    "threshold": 0.01,
+    "lora_root": "/path/to/LLaMA-Factory/outputs/qwen25-7b-lora-emotion",
+    "root_path": "/path/to/PLM/Qwen2.5-7B-Instruct",
+    "baselineTokenID": 151665,
+    "epoch_list": [
+        0,
+        400,
+        800,
+        900,
+        1000,
+        1200,
+        1800,
+        2500,
+        4000,
+        6000
+    ],
+    "baseline_epoch": [
+        "epoch_14",
+        "epoch_11",
+        "epoch_7",
+        "epoch_9",
+        "epoch_22",
+        "epoch_10",
+        "epoch_23",
+        "epoch_15",
+        "epoch_9",
+        "epoch_19"
+    ],
+    "baseline_path_list": null
+}

@@ -1,0 +1,15 @@
+original_path	submitted_path	used_by
+<research-workspace>/results-generalization/harsanyi_spilt	interactions/generalization/harsanyi_spilt	Figures 3, 6, 9, A1, A2
+<research-workspace>/results-generalization/harsanyi_spilt_adv	interactions/generalization/harsanyi_spilt_adv	Figures 3, 6, 9, A1, A2
+<research-workspace>/results-generalization/robustness_n	interactions/robustness_n	Figure 5
+<research-workspace>/AIJ_fig/Fig_04_training_dynamics/saved-interactions	interactions/training_dynamics	Figure 4
+<research-workspace>/results/harsanyi	interactions/noise/clean	Figures 7, 8
+<research-workspace>/results/harsanyi-attack	interactions/noise/attack	Figures 7, 8
+<research-workspace>/results/harsanyi-parameter-gaussian	interactions/noise/parameter_gaussian	Figure 7
+<research-workspace>/results/harsanyi-parameter	interactions/noise/parameter_uniform	Figure 8
+<research-workspace>/AIJ_fig/interaction_target_single_cache	interactions/robustness_n/llm_target_single_cache_globalq	Figures 3, 5, 6 (re-sparsified 2026-08-15 with unified dataset-level q_bound; see Fig_05_robustness/INVESTIGATION.md)
+<research-workspace>/AIJ_fig/interaction_llm_noise_fig_cache	interactions/llm/noise	Figure 7
+<research-workspace>/AIJ_fig/Fig_09_misclassification/llm_interaction_cache	interactions/llm/misclassification	Figure 9
+<research-workspace>/AIJ_fig/Fig_A3_A6_llm_examples/interaction_target_single_cache	interactions/llm/examples	Figures A3-A6
+<llm-benchmark-workspace>/interaction_output/masks.npy	interactions/llm/masks.npy	Figures 3, 6
+# NOTE 2026-07-30: interactions/noise/clean/dataset=cifar10_model=resnet20_epoch=50_bs=128_lr=0.01_weight-decay=0.0005_seed=1029_noise-label=False was re-generated (2026-07-30) with the epoch-31 checkpoint to match the data used by the manuscript figure (2025-03-30 run); the previous 03-26 contents are kept as .bak-0326. See SOURCE.md inside that directory for pipeline, checkpoint, environment, and cross-validation numbers.

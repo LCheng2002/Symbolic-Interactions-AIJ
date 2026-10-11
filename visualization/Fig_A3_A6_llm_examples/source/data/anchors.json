@@ -1,0 +1,30 @@
+{
+  "valid_sample_indices": [
+    0,
+    1
+  ],
+  "samples": {
+    "0": {
+      "anchor_token": " settings",
+      "per_model": {
+        "deepseek-ai__DeepSeek-R1-Distill-Llama-8B": {
+          "token_id": 5110
+        },
+        "Qwen__Qwen2.5-7B": {
+          "token_id": 5003
+        }
+      }
+    },
+    "1": {
+      "anchor_token": " transformer",
+      "per_model": {
+        "deepseek-ai__DeepSeek-R1-Distill-Llama-8B": {
+          "token_id": 43678
+        },
+        "Qwen__Qwen2.5-7B": {
+          "token_id": 42578
+        }
+      }
+    }
+  }
+}

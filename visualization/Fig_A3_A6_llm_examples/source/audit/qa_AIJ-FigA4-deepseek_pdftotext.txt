@@ -1,0 +1,21 @@
+Prompt 2: On June 11, 2018, OpenAI researchers and engineers published a paper introducing the first generative pre-trained
+Target:   transformer                                       +                            DeepSeekR1-Distill-Llama-8B
+
+ISand=9.38                    ISand=5.24                    ISand=4.99                     ISor=-4.98                    ISor=-4.56
+
+                On                    June 11, 2018,            On       June 11, 2018,        On       June 11, 2018,                On
+                                                                the first generative                                         the first generative
+ISand=2.43                    ISor=2.32                             pre-trained            ISand=4.07                            pre-trained
+
+                On               On        June 11, 2018,   ISor=-1.77                         the first generative      ISor=-1.97
+                                                                                                   pre-trained
+    the first generative                   OpenAI
+        pre-trained                                          June 11, 2018,       OpenAI                                         On   OpenAI
+                                  the first generative                                     ISor=1.66
+                                      pre-trained               the first generative                                         the first generative
+ISand=1.11                                                          pre-trained                                                  pre-trained
+                                                                                                        OpenAI
+   On        June 11, 2018,                                                                    the first generative
+                                                                                                   pre-trained
+     OpenAI       a paper
+

@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "shared_style": {
+    "canvas_width_points": 470.09,
+    "panel_height": "content-cropped: header + tallest column + bottom margin",
+    "font_family": "DejaVu Sans",
+    "effect_font_points": 5.3,
+    "player_font_points": 5.3,
+    "box_fill": "#DBE5F1",
+    "trunk": "#28558A",
+    "connector": "#28558A",
+    "columns": 5
+  },
+  "figures": {
+    "AIJ-FigA3-deepseek": {
+      "checks": {
+        "pdf_exists": true,
+        "png_exists": true,
+        "single_page": true,
+        "canvas_matches_metadata_points": true,
+        "prompt_text": true,
+        "target_text": true,
+        "model_title": true,
+        "wrong_prompt_absent": true,
+        "wrong_model_absent": true,
+        "fonts_present": true,
+        "fonts_embedded": true,
+        "no_raster_images": true,
+        "selection_rule": true,
+        "selected_count_consistent": true,
+        "geometry_passed": true,
+        "all_members_rendered_once_in_order": true,
+        "five_column_style": true,
+        "shared_style_exact": true,
+        "effective_font_at_least_5pt": true
+      },
+      "failed": [],
+      "candidate_interaction_count": 2048,
+      "threshold_applied": false,
+      "top_k_applied": true,
+      "final_selected_count": 12,
+      "page_info": [
+        "Pages:          1",
+        "Page size:      470.09 x 134.108 pts",
+        "File size:      31788 bytes"
+      ]
+    },
+    "AIJ-FigA4-deepseek": {
+      "checks": {
+        "pdf_exists": true,
+        "png_exists": true,
+        "single_page": true,
+        "canvas_matches_metadata_points": true,
+        "prompt_text": true,
+        "target_text": true,
+        "model_title": true,
+        "wrong_prompt_absent": true,
+        "wrong_model_absent": true,
+        "fonts_present": true,
+        "fonts_embedded": true,
+        "no_raster_images": true,
+        "selection_rule": true,
+        "selected_count_consistent": true,
+        "geometry_passed": true,
+        "all_members_rendered_once_in_order": true,
+        "five_column_style": true,
+        "shared_style_exact": true,
+        "effective_font_at_least_5pt": true
+      },
+      "failed": [],
+      "candidate_interaction_count": 2048,
+      "threshold_applied": false,
+      "top_k_applied": true,
+      "final_selected_count": 12,
+      "page_info": [
+        "Pages:          1",
+        "Page size:      470.09 x 138.788 pts",
+        "File size:      31129 bytes"
+      ]
+    },
+    "AIJ-FigA5-qwen": {
+      "checks": {
+        "pdf_exists": true,
+        "png_exists": true,
+        "single_page": true,
+        "canvas_matches_metadata_points": true,
+        "prompt_text": true,
+        "target_text": true,
+        "model_title": true,
+        "wrong_prompt_absent": true,
+        "wrong_model_absent": true,
+        "fonts_present": true,
+        "fonts_embedded": true,
+        "no_raster_images": true,
+        "selection_rule": true,
+        "selected_count_consistent": true,
+        "geometry_passed": true,
+        "all_members_rendered_once_in_order": true,
+        "five_column_style": true,
+        "shared_style_exact": true,
+        "effective_font_at_least_5pt": true
+      },
+      "failed": [],
+      "candidate_interaction_count": 2048,
+      "threshold_applied": false,
+      "top_k_applied": true,
+      "final_selected_count": 12,
+      "page_info": [
+        "Pages:          1",
+        "Page size:      470.09 x 134.108 pts",
+        "File size:      31736 bytes"
+      ]
+    },
+    "AIJ-FigA6-qwen": {
+      "checks": {
+        "pdf_exists": true,
+        "png_exists": true,
+        "single_page": true,
+        "canvas_matches_metadata_points": true,
+        "prompt_text": true,
+        "target_text": true,
+        "model_title": true,
+        "wrong_prompt_absent": true,
+        "wrong_model_absent": true,
+        "fonts_present": true,
+        "fonts_embedded": true,
+        "no_raster_images": true,
+        "selection_rule": true,
+        "selected_count_consistent": true,
+        "geometry_passed": true,
+        "all_members_rendered_once_in_order": true,
+        "five_column_style": true,
+        "shared_style_exact": true,
+        "effective_font_at_least_5pt": true
+      },
+      "failed": [],
+      "candidate_interaction_count": 2048,
+      "threshold_applied": false,
+      "top_k_applied": true,
+      "final_selected_count": 12,
+      "page_info": [
+        "Pages:          1",
+        "Page size:      470.09 x 147.088 pts",
+        "File size:      30586 bytes"
+      ]
+    }
+  },
+  "failures": []
+}

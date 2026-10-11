@@ -1,0 +1,35 @@
+# Numerical data are distributed separately on Zenodo.
+visualization/interactions/
+visualization/CHECKSUMS.sha256
+/interactions.tar.gz
+/interactions.tar.gz.sha256
+*.pth
+*.pt
+*.ckpt
+
+# Do not add external toolkits, restricted implementations, or binary packages.
+/extraction/
+/SITKit/
+*.whl
+*.so
+*.pyd
+*.dll
+*.dylib
+
+# Rendered / regenerated outputs
+**/outputs/
+**/.cache/
+**/.cache_*/
+**/cache/
+**/tmp/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.venv/
+
+# OS / editor
+.DS_Store
+.vscode/

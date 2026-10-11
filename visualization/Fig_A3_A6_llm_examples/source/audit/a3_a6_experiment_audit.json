@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "failed_checks": [],
+  "models": {
+    "deepseek-ai__DeepSeek-R1-Distill-Llama-8B": {
+      "0": {
+        "target": "settings",
+        "target_token_id": 5110,
+        "top1_probability": 0.5113556385040283,
+        "batch_size": 16,
+        "output_range": 19.900466918945312,
+        "q_bound": 0.398009330034256,
+        "q_max_abs": 0.398009330034256,
+        "loss_initial": 795.1339111328125,
+        "loss_final": 103.95687103271484,
+        "loss_minimum": 103.94216918945312,
+        "loss_minimum_iteration": 19984,
+        "reconstruction_max_abs_error": 5.7220458984375e-06,
+        "original_reward_max_abs_error": 0.3980140686035156
+      },
+      "1": {
+        "target": "transformer",
+        "target_token_id": 43678,
+        "top1_probability": 0.5173463225364685,
+        "batch_size": 16,
+        "output_range": 17.7297420501709,
+        "q_bound": 0.3545948266983032,
+        "q_max_abs": 0.3545948266983032,
+        "loss_initial": 509.9652099609375,
+        "loss_final": 83.40201568603516,
+        "loss_minimum": 83.36312103271484,
+        "loss_minimum_iteration": 19966,
+        "reconstruction_max_abs_error": 4.76837158203125e-06,
+        "original_reward_max_abs_error": 0.3545989990234375
+      }
+    },
+    "Qwen__Qwen2.5-7B": {
+      "0": {
+        "target": "settings",
+        "target_token_id": 5003,
+        "top1_probability": 0.36852437257766724,
+        "batch_size": 256,
+        "output_range": 11.601348876953125,
+        "q_bound": 0.23202697932720184,
+        "q_max_abs": 0.23202697932720184,
+        "loss_initial": 949.663330078125,
+        "loss_final": 69.84333801269531,
+        "loss_minimum": 69.83702087402344,
+        "loss_minimum_iteration": 19987,
+        "reconstruction_max_abs_error": 2.86102294921875e-06,
+        "original_reward_max_abs_error": 0.23202896118164062
+      },
+      "1": {
+        "target": "transformer",
+        "target_token_id": 42578,
+        "top1_probability": 0.8239799737930298,
+        "batch_size": 256,
+        "output_range": 19.909080505371094,
+        "q_bound": 0.39818158745765686,
+        "q_max_abs": 0.39818158745765686,
+        "loss_initial": 1234.001708984375,
+        "loss_final": 43.3748779296875,
+        "loss_minimum": 43.33870315551758,
+        "loss_minimum_iteration": 19977,
+        "reconstruction_max_abs_error": 3.814697265625e-06,
+        "original_reward_max_abs_error": 0.39818382263183594
+      }
+    }
+  },
+  "hashes": {
+    "inputs": {
+      "prompts.json": "7113314720c276de9b619784a172038e8a5fbc1e4115c1e9396e441856ec92f1",
+      "prompts.txt": "21e8ac5cd3c495e200b63c66c6a4e4521b664a181e912dd7567fd5f635c896b8",
+      "players.json": "f4570598cd78fe461b4e31108aa9cc63fdd16f0d5f47adf55cb800cfaed50507"
+    },
+    "baselines": {
+      "deepseek-ai__DeepSeek-R1-Distill-Llama-8B": "3d1ec4b8ac57cc5201c191b435a71c5869c103475babdab11af111494744a4f8",
+      "Qwen__Qwen2.5-7B": "df93cd45f5f2eadc95637f617d82c6316af16dee0dd626b8b94a0ee55123accc"
+    },
+    "scripts": {
+      "scripts/audit_experiments.py": "fb2112a4b1facff1bfbbb4d85458ac19630456cb92ca9a32f9a8fe22027836a3",
+      "scripts/generate_inference.py": "d30cc054e20e626fdcf3d64ef3aa5ab21938ae252caaba9342c7fe75c18db3cd",
+      "scripts/interaction_tree/__init__.py": "6dc78403d796f98f8c180179c9eaee99357a73a59eff12fd62b595f295b28d5e",
+      "scripts/interaction_tree/layout.py": "d8c919f8f19cef1f876480b663ab72280eec79a5bd28b76d295f8fcd09aec37b",
+      "scripts/interaction_tree/measure.py": "5bad07902d75c4b4743556b151bf545d3dcd672b4d8bdee9d6101d021a77f1ba",
+      "scripts/interaction_tree/renderer.py": "4917d4d18c8277cd6a3f2ae8ecea55dcc7b77e47d9a0301fdbeb9d80fdc72add",
+      "scripts/interaction_tree/schema.py": "97b8757e0f65ec7d55e8c1d357f2341bb9ab2998c6ae7c7a28b8ed1b49089f46",
+      "scripts/interaction_tree/validator.py": "1b756d3343e2f1d429597f3901935600869d1b599fd0074ed51a6ab78d1f10ab",
+      "scripts/model_utils.py": "e23b24b55352c267bc1bba1b106c745a815ead2b916a950b07f21a5e4f71a70b",
+      "scripts/probe_targets_and_players.py": "d6672c01a60070fb508bb6bd434d70f7b042e61e5da92ee790b29fbfa59ae130",
+      "scripts/qa_figures.py": "dc300ff8ba9815a943e78d3b613197bbef5e130473dbe833513beb129351c2ed",
+      "scripts/render_a3_a6.py": "3fac7d208e64dedddfa9a0595e145c1bf9e7dd3fefbe812bb8c88b8515673e55",
+      "scripts/single_sparsify_qcoef02.py": "1989e05034427fe444d69db1a924e0599446cb429ad7c2a7a7589a80f1792cdf"
+    }
+  }
+}

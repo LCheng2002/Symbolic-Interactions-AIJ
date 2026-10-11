@@ -1,0 +1,22 @@
+{
+    "device": "cuda:0",
+    "baseline_path": "/path/to/two-phase-average/baseline-result-llama3-8b-init-average-066n/lr5-thres1000",
+    "batch_size": 128,
+    "sample_path": "/path/to/two-phase-average/data/llama3_emotions_sentence.json",
+    "save_dir": "/path/to/two-phase-average/results-llama-3-8b-average-init-bslr5-history-066n-80epoch",
+    "with_indent": 1,
+    "lr": 1e-07,
+    "smoothness": 0.999,
+    "sparsify_loss": "option1",
+    "epochs": 20000,
+    "threshold": 0.01,
+    "lora_root": "/path/to/LLaMA-Factory/outputs/llama3-8b-lora-emotion",
+    "root_path": "/path/to/models/Meta-Llama-3-8B-Instruct",
+    "baselineTokenID": 31990,
+    "epoch_list": [
+        1500
+    ],
+    "baseline_epoch": [
+        "epoch_199"
+    ]
+}

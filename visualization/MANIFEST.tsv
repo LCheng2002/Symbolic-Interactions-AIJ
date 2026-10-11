@@ -1,0 +1,13 @@
+paper_figure	directory	final_pdf	visualization_source	interaction_group	verification
+Figure 1	Fig_01_overview	AIJ-Fig1-overview.pdf	AIJ-Fig1-overview.pptx	none	SHA256 exact match
+Figure 2	Fig_02_identification	AIJ-Fig2-identification.pdf	AIJ-Fig2-identification.pptx	none	SHA256 exact match
+Figure 3	Fig_03_distributions	AIJ-Fig3-distributions.pdf	main_with_llm_cache.ipynb; AIJ-Fig3-distributions_LLM.pptx	generalization; robustness_n/llm_target_single_cache_globalq	SHA256 exact match
+Figure 4	Fig_04_dynamics	AIJ-Fig4-dynamics.pdf	main_w_LLM.ipynb; AIJ-Fig4-dynamics.pptx	training_dynamics	SHA256 exact match
+Figure 5	Fig_05_robustness	AIJ-Fig5-robustness.pdf	render_with_llm_cache.py; compose_submission_figure.py	robustness_n	SHA256 exact match
+Figure 6	Fig_06_fit	AIJ-Fig6-fit.pdf	main_w_LLM.ipynb; AIJ-Fig6-fit_LLM.pptx	generalization; robustness_n/llm_target_single_cache_globalq	SHA256 exact match
+Figure 7	Fig_07_noise	AIJ-Fig7-noise.pdf	main_w_LLM.ipynb; AIJ-Fig7-noise_LLM.pptx	noise/clean; noise/attack; noise/parameter_gaussian; llm/noise	SHA256 exact match
+Figure 8	Fig_08_noise	AIJ-Fig8-noise.pdf	main.ipynb; render_main.py; AIJ-Fig8-noise.pptx	noise/clean; noise/attack; noise/parameter_uniform	SHA256 exact match
+Figure 9	Fig_09_correctness	AIJ-Fig9-correctness.pdf	main.ipynb; AIJ-Fig9-correctness.pptx (formal); render_llm_finance.py (additional output)	generalization (formal); llm/misclassification (additional output)	SHA256 exact match
+Figure A1	Fig_A1_A2_sparsity_matching	AIJ-FigA1-sparsity.pdf	main.ipynb; generate_sparsity.py	generalization	SHA256 exact match
+Figure A2	Fig_A1_A2_sparsity_matching	AIJ-FigA2-matching.pdf	main.ipynb; generate_figures.py	generalization	SHA256 exact match
+Figures A3-A6	Fig_A3_A6_llm_examples	AIJ-FigA3-deepseek.pdf; AIJ-FigA4-deepseek.pdf; AIJ-FigA5-qwen.pdf; AIJ-FigA6-qwen.pdf	render_a3_a6.py	llm/examples	SHA256 exact match

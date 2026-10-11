@@ -1,0 +1,24 @@
+Prompt 2: On June 11, 2018, OpenAI researchers and engineers published a paper introducing the first generative pre-trained
+Target:   transformer                                       +                                                      Qwen2.5-7B
+
+ISand=12.84                ISand=1.10                    ISand=0.77                    ISor=0.71                  ISand=0.70
+
+    the first generative            June 11, 2018,                     OpenAI                        OpenAI                      On
+        pre-trained
+                                                                                           the first generative       the first generative
+                           ISor=-0.61                    ISor=-0.58                            pre-trained                pre-trained
+ISor=0.58
+                               On       June 11, 2018,       On       June 11, 2018,   ISor=0.52                  ISand=0.50
+    OpenAI    engineers
+                             OpenAI        researchers       the first generative
+    the first generative                                         pre-trained                       introducing                 a paper
+        pre-trained
+                           ISand=-0.47                                                     the first generative
+                                                         ISand=-0.46                           pre-trained
+                               On       June 11, 2018,
+                                                              OpenAI       a paper
+                                         OpenAI
+                                                             the first generative
+                               the first generative              pre-trained
+                                   pre-trained
+

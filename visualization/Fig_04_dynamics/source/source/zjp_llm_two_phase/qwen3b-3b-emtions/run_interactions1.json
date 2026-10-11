@@ -1,0 +1,37 @@
+{
+    "device": "cuda:0",
+    "baseline_path": "",
+    "batch_size": 256,
+    "sample_path": "/path/to/two-phase-average/data-gt/qwen/emotion_test_interactions.json",
+    "save_dir": "/path/to/two-phase-average/results/interactions/qwen3b-3b-emtions",
+    "with_indent": 1,
+    "lr": 1e-07,
+    "smoothness": 0.999,
+    "sparsify_loss": "option1",
+    "epochs": 20000,
+    "threshold": 0.01,
+    "lora_root": "/path/to/LLaMA-Factory/outputs-consistency/qwen3b-seed1019",
+    "root_path": "/path/to/models/qwen/Qwen2.5-3B-Instruct",
+    "baselineTokenID": 151665,
+    "epoch_list": [
+        100,
+        1000,
+        2000,
+        3000,
+        3700
+    ],
+    "baseline_epoch": [
+        "epoch_99",
+        "epoch_99",
+        "epoch_99",
+        "epoch_99",
+        "epoch_99"
+    ],
+    "baseline_path_list": [
+        "/path/to/two-phase-average/baseline-result-qwen3b-seed1019/lr4-nothres",
+        "/path/to/two-phase-average/baseline-result-qwen3b-seed1019/lr4-nothres",
+        "/path/to/two-phase-average/baseline-result-qwen3b-seed1019/lr4-nothres",
+        "/path/to/two-phase-average/baseline-result-qwen3b-seed1019/lr4-nothres",
+        "/path/to/two-phase-average/baseline-result-qwen3b-seed1019/lr5-nothres"
+    ]
+}

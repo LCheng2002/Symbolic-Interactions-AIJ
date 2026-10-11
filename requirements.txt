@@ -1,0 +1,14 @@
+# Analysis and visualization of precomputed interactions only.
+numpy
+pandas
+scipy
+matplotlib
+tqdm
+torch
+
+# Figure composition and image utilities.
+pypdf
+Pillow
+
+# Install jupyterlab and ipykernel separately for notebook entry points.
+# SITKit has its own environment and is not a dependency of figure reproduction.

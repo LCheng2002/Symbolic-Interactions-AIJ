@@ -1,0 +1,7 @@
+# Figure 4: training dynamics
+
+`source/main_w_LLM.ipynb` reads the six submitted checkpoint series from `interactions/training_dynamics/` and produces `outputs/main_combined_w_LLM.pdf`. This direct export has the same SHA-256 value as `final/AIJ-Fig4-dynamics.pdf`.
+
+The composite page is 5.77 x 8.38 inches (2 columns x 3 rows), sized so that the figure together with its caption fills a full text page. Each of the six panels is drawn at its final print size, so all fonts render at their true point sizes in the vector PDF. The loss legend sits in a dedicated horizontal strip above each loss panel, so it never overlaps the loss curves. The `source/.cache/` directory holds the cached reliable-interaction decompositions so the notebook rebuilds quickly; it is regenerated automatically if removed.
+
+The visual-model checkpoints follow the training-stage choices reported in the paper. The two displayed Qwen series were selected from the available checkpoints to illustrate a sequence in which the relative strength of middle-order interactions decreases from A to B and then increases from B through D. They are a qualitative illustration of that pattern, not an unbiased summary of the full checkpoint trajectory. The hard-coded choices and the score used for selection are retained in `source/adapt_zjp_llm_two_phase.py` for provenance. That adaptation script depends on upstream raw checkpoint directories that are not part of this package; it is not required to rebuild the submitted figure from the selected interaction arrays.

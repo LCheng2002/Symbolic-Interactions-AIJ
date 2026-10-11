@@ -1,0 +1,18 @@
+Prompt 1: New York Department of Health recommends that all people should wear N95, KN95, or KF94 masks in all public
+Target:   settings                                          +                         DeepSeekR1-Distill-Llama-8B
+
+ISand=14.78                    ISor=-2.25                 ISor=-1.96                   ISand=1.85                   ISand=1.74
+
+             New York             Department     Health        New York     public                  public           New York     KF94 masks
+                                       recommends
+ISor=-1.25                                                ISand=1.58                   ISor=1.24                    ISand=1.22
+                                    all people   wear
+    Department          wear       KN95     KF94 masks     New York      Department        wear     N95      KN95       New York      Health
+         N95     KN95                                             N95     public               KF94 masks
+                               ISand=1.14                                                                           ISor=1.09
+         KF94 masks
+                                                          ISand=0.99
+                                    New York     KN95                                                                 Health     recommends
+                                                                New York        wear                                     all people   wear
+                                                                       public                                          KN95      KF94 masks
+
